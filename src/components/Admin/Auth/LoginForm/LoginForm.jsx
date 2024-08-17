@@ -18,6 +18,7 @@ export function LoginForm() {
         onSubmit: async (formValue) => {
             try {
                 const response = await authController.login(formValue)
+                //console.log("Esto es response: ", response);
                 login(response.access)           
 
             } catch (error) {

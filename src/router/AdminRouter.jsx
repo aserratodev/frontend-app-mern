@@ -7,6 +7,8 @@ import { useAuth } from "../hooks"
 
 export function AdminRouter() {    
     const { user } = useAuth
+    console.log("esto es user: ", user);
+    
 
     const loadLayout = (Layout, Page) => {
         return (
